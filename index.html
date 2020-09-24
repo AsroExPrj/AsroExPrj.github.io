@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vasco Da Gama</title>
+    <link rel="stylesheet" href="style.css" />
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="logo_square.png" />
+    </head>
+<body onscroll = "stickyfunction">
+<h1>Vasco Da Gama</h1>
+<ul>
+<div id="navbar">
+  <li class="active" ><a href="index.html">About Me</a></li>
+  <li><a href="sponsors.html">Our Sponsors</a></li>
+  <!--<li><a href="summer_camp.html">Summer Camp</a></li>-->
+  <li style="float:right"><a href="contact us.html">Contact Us</a></li>
+</div>
+</ul>
+  <div id="content">
+      <h2><div class = center>About me</div></h2>
+      <h1><img src="logo.png" alt="Our logo" width="500"></h1>
+
+     <!--todo: change body text-->
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac tristique felis, sed rutrum neque. Donec ac lobortis urna. Vivamus quis maximus odio. Aenean tempor posuere ex, in sodales eros dignissim non. Quisque leo libero, tincidunt eu elit non, efficitur bibendum orci. Donec sed dignissim mi. Mauris volutpat, metus at consequat bibendum, eros ipsum porttitor dui, non rutrum libero dolor ac felis. Mauris pretium lorem metus, at vestibulum dui placerat non. Aliquam id condimentum lectus, in eleifend neque. Etiam vel diam et nulla interdum mattis eget nec mauris. Morbi malesuada justo mollis, egestas orci sit amet, semper ipsum. Proin ultrices pulvinar augue. Integer gravida lacus sed tellus mollis, a vestibulum leo euismod. Nunc enim augue, sagittis quis sapien eget, congue mollis odio.</p>
+
+      <h1>Where we start</h1>
+  </div>
+
+  <!-- Embeded map -->
+    <div class="center">
+  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJvcC6OrfkwokRxGICac_DZDM&key=AIzaSyBpiRnWoEMKdpoxC83yxzSPgpGxmzoIztE" allowfullscreen></iframe>
+  </div>
+<script>
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function stickyfunction() {
+  if (window.pageYOffset >= sticky)
+  navbar.classList.add("sticky")
+} else {
+  navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
