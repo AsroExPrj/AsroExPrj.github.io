@@ -99,3 +99,8 @@ a[href^="mailto"] {
 .date {
   color: #ffff00;
 }
+
+
+.bulleted_list {
+    list-style-type:disc;
+}

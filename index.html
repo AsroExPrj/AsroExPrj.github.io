@@ -12,24 +12,62 @@
 <ul>
 <div id="navbar">
   <li class="active" ><a href="index.html">About Me</a></li>
-  <li><a href="sponsors.html">Our Sponsors</a></li>
+  <li><a href="sponsors.html">My Sponsor</a></li>
   <!--<li><a href="summer_camp.html">Summer Camp</a></li>-->
-  <li style="float:right"><a href="contact us.html">Contact Us</a></li>
+  <li style="float:right"><a href="Enlist.html">Enlist</a></li>
+
+    <!--need to make navbar changes to all-->
 </div>
 </ul>
-  <div id="content">
-      <h2><div class = center>About me</div></h2>
-      <h1><img src="logo.png" alt="Our logo" width="500"></h1>
+<div id="content">
+    <h2><div class=center>About me</div></h2>
+    <h1><img src="logo.png" alt="Our logo" width="500"></h1>
 
-     <!--todo: change body text-->
-      <p>Hello! I am Vasco De Gama son of Estêvão da Gama. I was born in 1460 and all my life I have wanted to sail the oceans. At age 20 I had already become the captain of a ship but I have always wanted to go further. Now I am looking for a crew to help me sail from Lisbon, Portugal to the southern tip of India. Prince Henry (Henry the Navigator) has already shown that the Atlantic ocean and the Indian ocean are not separate, now Manuel I of Portugal is sponsoring another voyage to prove that it is possible to sail around Africa. I hope you will be joining me!</p>
 
-      <h1>Where we start</h1>
-  </div>
+
+    <!--Make the site unicode-->
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <p>Hello! I am Vasco De Gama son of Estêvão da Gama. I was born in 1460 and all my life I have wanted to sail the oceans. At age 20 I had already become the captain of a ship but I have always wanted to go further. Now I am looking for a crew to help me sail from Lisbon, Portugal to the southern tip of India. Prince Henry (Henry the Navigator) has already shown that the Atlantic ocean and the Indian ocean are not separate, now Manuel I of Portugal is sponsoring another voyage to prove that it is possible to sail around Africa. I hope you will be joining me!</p>
+
+    <!---<h1>Where we start</h1>-->
+    <button class="accordion"><h1>Where we start</h1></button>
+    <div class="panel">
+        <div class="campinfo">
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4499153.150817745!2d-12.073515723992362!3d40.01096976455832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisbon%2C%20Portugal!5e0!3m2!1sen!2sus!4v1601036489054!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+    </div>
+
+    <button class="accordion"><h1>Our goal</h1></button>
+    <div class="panel">
+        <div class="campinfo">
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4386734.5753999185!2d76.2934722807749!3d11.075218263103062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65938563d4747%3A0x32150641ca32ecab!2sKozhikode%2C%20Kerala%2C%20India!5e0!3m2!1sen!2sus!4v1601037831886!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            </div>
+        </div>
+    </div>
+
+    <button class="accordion"><h1>Location</h1></button>
+    <div class="panel">
+        <div class="campinfo">
+            <div class="bulleted_list">
+             
+                <li>Two the ships will be Naos(add). Our flagship, piloted by me, will be the St. Gabriel. my brother, Paolo de gama, will be piloting the other one(St Raphael).</li>
+                <li>We will also have a caravel, piloted by Berrio Nicolau Coelho and a store ship.</li>
+            </div>
+
+        </div>
+    </div>
+    <p>
+
+
+
+</div>
 
   <!-- Embeded map -->
     <div class="center">
-  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJvcC6OrfkwokRxGICac_DZDM&key=AIzaSyBpiRnWoEMKdpoxC83yxzSPgpGxmzoIztE" allowfullscreen></iframe>
   </div>
 <script>
 var navbar = document.getElementById("navbar");
@@ -42,5 +80,28 @@ function stickyfunction() {
   }
 }
 </script>
+
+
+
+<!--script for accordion-->
+<script>var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }</script>
 </body>
 </html>
